@@ -1,4 +1,4 @@
-FROM redis:3
+FROM redis:4.0
 
 
 ADD sentinel.conf /etc/redis/sentinel.conf
