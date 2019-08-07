@@ -1,4 +1,4 @@
-FROM redis:5.0
+FROM redis:5.0.5-alpine
 
 
 ADD sentinel.conf /etc/redis/sentinel.conf

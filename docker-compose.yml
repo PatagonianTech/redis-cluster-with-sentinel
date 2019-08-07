@@ -2,10 +2,10 @@ version: "3.2"
 
 services:
   master:
-    image: redis:5.0
+    image: redis:5.0.5-alpine
 
   slave:
-    image: redis:5.0
+    image: redis:5.0.5-alpine
     command: redis-server --slaveof redis-master 6379
     links:
       - master:redis-master
